@@ -28,7 +28,12 @@
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
           </ul>
-        </li> <!-- End Dropdown -->
+        </li>
+
+        <!-- Log out -->
+        <% if user_signed_in? %>
+          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+        <% end %>
 
       </ul>
     </div><!-- /.navbar-collapse -->
