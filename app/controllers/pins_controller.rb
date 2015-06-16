@@ -6,7 +6,7 @@ class PinsController < ApplicationController
   # respond_to :html
 
   def index
-    @pins = Pin.all.reverse_order
+    @pins = Pin.all.reverse_order.paginate(:page => params[:page], :per_page => 10)
   end
 
   def show
