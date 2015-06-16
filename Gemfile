@@ -10,6 +10,7 @@ gem 'turbolinks' # Faster links in your web application
 gem 'jbuilder', '~> 2.0' # Build JSON APIs
 gem 'bootstrap-sass' # Bootstrap
 gem 'devise', '~> 3.5.1'
+gem 'paperclip', '~> 4.2'
 
 group :development, :test do
 	gem 'sqlite3' # sqlite3 database for Active Record
