@@ -1,19 +1,22 @@
 source 'https://rubygems.org'
 ruby '2.1.5'
 
-gem 'rails', '4.1.8' # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'sass-rails', '~> 4.0.3' # For stylesheets
-gem 'uglifier', '>= 1.3.0' # Compressor for JavaScript assets
-gem 'coffee-rails', '~> 4.0.0' # For .js.coffee assets and views
-gem 'jquery-rails' # Use jquery as the JavaScript library
-gem 'turbolinks' # Faster links in your web application
-gem 'jbuilder', '~> 2.0' # Build JSON APIs
-gem 'bootstrap-sass' # Bootstrap
+gem 'rails', '4.1.8'
+gem 'sass-rails', '~> 4.0.3'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jquery-turbolinks'
+gem 'jbuilder', '~> 2.0'
+gem 'bootstrap-sass'
 gem 'devise', '~> 3.5.1'
 gem 'paperclip', '~> 4.2'
+gem 'aws-sdk', '~> 2.1.0'
+gem 'masonry-rails', '~> 0.2.4'
 
 group :development, :test do
-	gem 'sqlite3' # sqlite3 database for Active Record
+	gem 'sqlite3'
 end
 
 group :production do
